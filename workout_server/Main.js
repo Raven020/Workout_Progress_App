@@ -13,6 +13,8 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
+
+// app to register user, and send the client the users data
 app.post("/registerUser", (req, res) => {
     console.log("registering user - ");
     res.send(data);
