@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
 // app to register user, and send the client the users data
 app.post("/registerUser", (req, res) => {
     console.log("registering user - ");
+    console.log(req.body);
     res.send(projectedWeight);
 })
 
